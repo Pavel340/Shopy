@@ -1,0 +1,78 @@
+@import "partials/bourbon/bourbon"
+@import "partials/_vars.sass"
+
+body
+	margin: 0 auto
+	padding: 0
+	overflow-x: hidden
+	max-width: 1540px
+	background-color: rgb(255, 255, 255)
+	font-family: RobotoRegular, $helvetica
+	font-size: em(14px)
+
+.socials
+	a
+		margin-right: 15px
+		&:last-child
+			margin-right: 0
+		span
+			color: $text-color
+			font-size: 20px
+			transition: all .5s
+		&:hover
+			span
+				color: $text-hover
+
+header
+	padding-top: 25px
+	.mail, .phone
+		display: inline-block
+		margin-right: 20px
+		.fa
+			margin-right: 10px
+			color: rgb(255, 100, 34)
+			font-size: 20px
+		a
+			color: $text-color
+			text-decoration: none
+			font-size: em(16px)
+			transition: all .5s
+			position: relative
+			bottom: 2px
+			&:hover
+				color: $text-hover
+	.socials
+		text-align: right
+	.bigHeader
+		.row
+			height: 120px
+		.mnu
+			list-style-type: none
+			li
+				display: inline-block
+				margin: 0 20px
+				a
+					color: $text-color
+					text-decoration: none
+					font-size: 16px
+					transition: color .5s
+				&.active
+					a
+						color: $text-hover
+				&:hover
+					a
+						color: $text-hover
+		.nav-icons
+			text-align: right
+			.fa
+				color: $text-color
+				transition: color .5s
+				margin: 0 15px
+				cursor: pointer
+				&:hover
+					color: $text-hover
+
+.img-wrap
+	width: 100%
+	img
+		max-width: 100%

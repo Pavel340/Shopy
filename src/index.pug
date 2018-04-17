@@ -1,0 +1,223 @@
+doctype html
+html(lang="ru")
+	head
+		meta(charset="utf-8")
+		title Shopy
+		meta(name="description")
+		meta(http-equiv="X-UA-Compatible" content="IE=edge")
+		meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
+		meta(property="og:image" content="path/to/image.jpg")
+
+		//Загрузка шрифтов из fonts.min.css в локальное хранилище (HTML5 LocalStorage)
+		script !function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="css/fonts.min.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();
+
+		link(rel="stylesheet" href="css/main.min.css")
+		link(rel="stylesheet" href="css/header.min.css")
+		link(rel="stylesheet" href="css/media.min.css")
+	body
+		header
+			.container
+				.row
+					.col-md-6.align-items-center
+						.mail
+							span.fa.fa-envelope-o
+							a(href="mailto:info@shopy.com") info@shopy.com
+						.phone
+							span.fa.fa-mobile
+							a(href="tel:4535553996") 455-5553-996
+					.col-md-6
+						.socials
+							a(href="#")
+								span.fa.fa-facebook
+							a(href="#")
+								span.fa.fa-twitter
+							a(href="#")
+								span.fa.fa-google-plus
+							a(href="#")
+								span.fa.fa-instagram
+				.bigHeader
+					.row.align-items-center
+						.col-md-2
+							a(href="#")
+								img(src="img/logo.png")
+						.col-md-7
+							nav
+								ul.mnu
+									li.active
+										a(href="#") Home
+									li
+										a(href="#") Products
+									li
+										a(href="#") Hot Deals
+									li
+										a(href="#") About
+									li
+										a(href="#") Contact
+						.col-md-3
+							.nav-icons
+								span.fa.fa-search
+								span.fa.fa-user-o
+								span.fa.fa-shopping-cart
+		section.featured
+			.feature-content
+				.img-wrap
+					img(src="img/slider/1.jpg")
+				.feature-item
+					.container-fliud
+						.row
+							.col-md-6
+								h2.headline Full winter kit
+								p.subtitle Half Jacket + Skiny Trousers + Boot leather
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus distinctio dolorum rem.
+								.order
+									span.price Price: 120$
+									button.cart
+										i.fa.fa-shopping-bag
+										| Order Now
+			.feature-content
+				.img-wrap
+					img(src="img/slider/1.jpg")
+				.feature-item
+					.container-fliud
+						.row
+							.col-md-6
+								h2.headline Full winter kit
+								p.subtitle Half Jacket + Skiny Trousers + Boot leather
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus distinctio dolorum rem.
+								.order
+									span.price Price: 120$
+									button.cart
+										i.fa.fa-shopping-bag
+										| Order Now
+			.feature-content
+				.img-wrap
+					img(src="img/slider/1.jpg")
+				.feature-item
+					.container-fliud
+						.row
+							.col-md-6
+								h2.headline Full winter kit
+								p.subtitle Half Jacket + Skiny Trousers + Boot leather
+								p.description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus distinctio dolorum rem.
+								.order
+									span.price Price: 120$
+									button.cart
+										i.fa.fa-shopping-bag
+										| Order Now
+		section.newArrivals
+			.sect-head
+				h2
+					span New
+					|  arrivals
+				p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi perspiciatis reprehenderit veniam?
+			.container
+				.row
+					.col-md-3
+						.arrival-item
+							.img-wrap
+								img(src='img/newArrivals/1.jpg')
+							.nameArrival Reebok Track Jacket
+							.sizeArrival sizes: s - m - l - xl
+							.colorArrival
+								.cl.red
+								.cl.black
+								.cl.blue
+								.cl.green
+							.iconArrival
+								a(href='#')
+									i.fa.fa-globe
+								a(href='#')
+									i.fa.fa-cart-plus
+								a(href='#')
+									i.fa.fa-heart-o
+							.priceArrival 100$
+					.col-md-3
+						.arrival-item
+							.img-wrap
+								img(src='img/newArrivals/2.jpg')
+							.nameArrival Reebok Track Jacket
+							.sizeArrival sizes: s - m - l - xl
+							.colorArrival
+								.cl.red
+								.cl.black
+								.cl.blue
+								.cl.green
+							.iconArrival
+								a(href='#')
+									i.fa.fa-globe
+								a(href='#')
+									i.fa.fa-cart-plus
+								a(href='#')
+									i.fa.fa-heart-o
+							.priceArrival 100$
+					.col-md-3
+						.arrival-item
+							.img-wrap
+								img(src='img/newArrivals/3.jpg')
+							.nameArrival Reebok Track Jacket
+							.sizeArrival sizes: s - m - l - xl
+							.colorArrival
+								.cl.red
+								.cl.black
+								.cl.blue
+								.cl.green
+							.iconArrival
+								a(href='#')
+									i.fa.fa-globe
+								a(href='#')
+									i.fa.fa-cart-plus
+								a(href='#')
+									i.fa.fa-heart-o
+							.priceArrival 100$
+					.col-md-3
+						.arrival-item
+							.img-wrap
+								img(src='img/newArrivals/3.jpg')
+							.nameArrival Reebok Track Jacket
+							.sizeArrival sizes: s - m - l - xl
+							.colorArrival
+								.cl.red
+								.cl.black
+								.cl.blue
+								.cl.green
+							.iconArrival
+								a(href='#')
+									i.fa.fa-globe
+								a(href='#')
+									i.fa.fa-cart-plus
+								a(href='#')
+									i.fa.fa-heart-o
+							.priceArrival 100$
+				.row
+					.col
+						.more
+							a(href='#')
+								.dot
+								.dot
+								.dot
+		section.hotDeal
+			.container
+				.row
+					.col-md-7
+						.deal-item
+							.deal-item-img-sale
+								img(src='img/hotDeal.png')
+								.text-sale Sale
+									span 50%
+							.deal-item-sale
+								.title-sale Full winter kit
+								.descr-sale Half Jacket + Skiny Trousers + Boot leather
+							.deal-item-price
+								i.fa.fa-cart-plus
+								span 120$
+					.col-md-5
+						.adv
+							.adv-title adv
+								span  area
+							span 470 x 100
+		.hidden
+
+	<!-- Load Scripts Start -->
+	script(src="js/libs.min.js")
+	script(src="js/main.min.js")
+	<!-- Load Scripts End -->

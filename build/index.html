@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Shopy</title>
+    <meta name="description">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta property="og:image" content="path/to/image.jpg">
+    <!--Загрузка шрифтов из fonts.min.css в локальное хранилище (HTML5 LocalStorage)-->
+    <script>!function(){function e(e,t,n){e.addEventListener?e.addEventListener(t,n,!1):e.attachEvent&&e.attachEvent("on"+t,n)}function t(e){return window.localStorage&&localStorage.font_css_cache&&localStorage.font_css_cache_file===e}function n(){if(window.localStorage&&window.XMLHttpRequest)if(t(o))a(localStorage.font_css_cache);else{var n=new XMLHttpRequest;n.open("GET",o,!0),e(n,"load",function(){4===n.readyState&&(a(n.responseText),localStorage.font_css_cache=n.responseText,localStorage.font_css_cache_file=o)}),n.send()}else{var c=document.createElement("link");c.href=o,c.rel="stylesheet",c.type="text/css",document.getElementsByTagName("head")[0].appendChild(c),document.cookie="font_css_cache"}}function a(e){var t=document.createElement("style");t.innerHTML=e,document.getElementsByTagName("head")[0].appendChild(t)}var o="css/fonts.min.css";window.localStorage&&localStorage.font_css_cache||document.cookie.indexOf("font_css_cache")>-1?n():e(window,"load",n)}();</script>
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/header.min.css">
+    <link rel="stylesheet" href="css/media.min.css">
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 align-items-center">
+            <div class="mail"><span class="fa fa-envelope-o"></span><a href="mailto:info@shopy.com">info@shopy.com</a></div>
+            <div class="phone"><span class="fa fa-mobile"></span><a href="tel:4535553996">455-5553-996</a></div>
+          </div>
+          <div class="col-md-6">
+            <div class="socials"><a href="#"><span class="fa fa-facebook"></span></a><a href="#"><span class="fa fa-twitter"></span></a><a href="#"><span class="fa fa-google-plus"></span></a><a href="#"><span class="fa fa-instagram"></span></a></div>
+          </div>
+        </div>
+        <div class="bigHeader">
+          <div class="row align-items-center">
+            <div class="col-md-2"><a href="#"><img src="img/logo.png"></a></div>
+            <div class="col-md-7">
+              <nav>
+                <ul class="mnu">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#">Products</a></li>
+                  <li><a href="#">Hot Deals</a></li>
+                  <li><a href="#">About</a></li>
+                  <li><a href="#">Contact</a></li>
+                </ul>
+              </nav>
+            </div>
+            <div class="col-md-3">
+              <div class="nav-icons"><span class="fa fa-search"></span><span class="fa fa-user-o"></span><span class="fa fa-shopping-cart"></span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="featured">
+      <div class="feature-content">
+        <div class="img-wrap"><img src="img/slider/1.jpg"></div>
+        <div class="feature-item">
+          <div class="container-fliud">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="headline">Full winter kit</h2>
+                <p class="subtitle">Half Jacket + Skiny Trousers + Boot leather</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus distinctio dolorum rem.</p>
+                <div class="order"><span class="price">Price: 120$</span>
+                  <button class="cart"><i class="fa fa-shopping-bag"></i>Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature-content">
+        <div class="img-wrap"><img src="img/slider/1.jpg"></div>
+        <div class="feature-item">
+          <div class="container-fliud">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="headline">Full winter kit</h2>
+                <p class="subtitle">Half Jacket + Skiny Trousers + Boot leather</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus distinctio dolorum rem.</p>
+                <div class="order"><span class="price">Price: 120$</span>
+                  <button class="cart"><i class="fa fa-shopping-bag"></i>Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="feature-content">
+        <div class="img-wrap"><img src="img/slider/1.jpg"></div>
+        <div class="feature-item">
+          <div class="container-fliud">
+            <div class="row">
+              <div class="col-md-6">
+                <h2 class="headline">Full winter kit</h2>
+                <p class="subtitle">Half Jacket + Skiny Trousers + Boot leather</p>
+                <p class="description">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus distinctio dolorum rem.</p>
+                <div class="order"><span class="price">Price: 120$</span>
+                  <button class="cart"><i class="fa fa-shopping-bag"></i>Order Now</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="newArrivals">
+      <div class="sect-head">
+        <h2><span>New</span> arrivals</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi perspiciatis reprehenderit veniam?</p>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-3">
+            <div class="arrival-item">
+              <div class="img-wrap"><img src="img/newArrivals/1.jpg"></div>
+              <div class="nameArrival">Reebok Track Jacket</div>
+              <div class="sizeArrival">sizes: s - m - l - xl</div>
+              <div class="colorArrival">
+                <div class="cl red"></div>
+                <div class="cl black"></div>
+                <div class="cl blue"></div>
+                <div class="cl green"></div>
+              </div>
+              <div class="iconArrival"><a href="#"><i class="fa fa-globe"></i></a><a href="#"><i class="fa fa-cart-plus"></i></a><a href="#"><i class="fa fa-heart-o"></i></a></div>
+              <div class="priceArrival">100$</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="arrival-item">
+              <div class="img-wrap"><img src="img/newArrivals/2.jpg"></div>
+              <div class="nameArrival">Reebok Track Jacket</div>
+              <div class="sizeArrival">sizes: s - m - l - xl</div>
+              <div class="colorArrival">
+                <div class="cl red"></div>
+                <div class="cl black"></div>
+                <div class="cl blue"></div>
+                <div class="cl green"></div>
+              </div>
+              <div class="iconArrival"><a href="#"><i class="fa fa-globe"></i></a><a href="#"><i class="fa fa-cart-plus"></i></a><a href="#"><i class="fa fa-heart-o"></i></a></div>
+              <div class="priceArrival">100$</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="arrival-item">
+              <div class="img-wrap"><img src="img/newArrivals/3.jpg"></div>
+              <div class="nameArrival">Reebok Track Jacket</div>
+              <div class="sizeArrival">sizes: s - m - l - xl</div>
+              <div class="colorArrival">
+                <div class="cl red"></div>
+                <div class="cl black"></div>
+                <div class="cl blue"></div>
+                <div class="cl green"></div>
+              </div>
+              <div class="iconArrival"><a href="#"><i class="fa fa-globe"></i></a><a href="#"><i class="fa fa-cart-plus"></i></a><a href="#"><i class="fa fa-heart-o"></i></a></div>
+              <div class="priceArrival">100$</div>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="arrival-item">
+              <div class="img-wrap"><img src="img/newArrivals/3.jpg"></div>
+              <div class="nameArrival">Reebok Track Jacket</div>
+              <div class="sizeArrival">sizes: s - m - l - xl</div>
+              <div class="colorArrival">
+                <div class="cl red"></div>
+                <div class="cl black"></div>
+                <div class="cl blue"></div>
+                <div class="cl green"></div>
+              </div>
+              <div class="iconArrival"><a href="#"><i class="fa fa-globe"></i></a><a href="#"><i class="fa fa-cart-plus"></i></a><a href="#"><i class="fa fa-heart-o"></i></a></div>
+              <div class="priceArrival">100$</div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <div class="more"><a href="#">
+                <div class="dot"></div>
+                <div class="dot"></div>
+                <div class="dot"></div></a></div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hotDeal">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <div class="deal-item">
+              <div class="deal-item-img-sale"><img src="img/hotDeal.png">
+                <div class="text-sale">Sale<span>50%</span></div>
+              </div>
+              <div class="deal-item-sale">
+                <div class="title-sale">Full winter kit</div>
+                <div class="descr-sale">Half Jacket + Skiny Trousers + Boot leather</div>
+              </div>
+              <div class="deal-item-price"><i class="fa fa-cart-plus"></i><span>120$</span></div>
+            </div>
+          </div>
+          <div class="col-md-5">
+            <div class="adv">
+              <div class="adv-title">adv<span> area</span></div><span>470 x 100</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="hidden"></div>
+  </body><!-- Load Scripts Start -->
+  <script src="js/libs.min.js"></script>
+  <script src="js/main.min.js"></script><!-- Load Scripts End -->
+</html>
